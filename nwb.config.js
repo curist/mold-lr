@@ -1,6 +1,7 @@
 module.exports = {
   type: 'react-app',
   webpack: {
+    publicPath: '',
     extra: {
       node: {
         fs: 'empty'
