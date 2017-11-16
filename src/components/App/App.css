@@ -14,7 +14,11 @@
 
 .header {
     display: flex;
-    justify-content: space-between;
+}
+
+.header > span {
+    display: inline-block;
+    margin-right: 25px;
 }
 
 .parts {

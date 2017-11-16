@@ -44,7 +44,7 @@ class Part extends React.Component {
       <input type='text' placeholder='CC' onChange={v('CC')} />
       <input type='number' min={0} placeholder='滑塊數' onChange={v('slides')} />
       <input type='number' min={0} placeholder='穴數' onChange={v('caveat')} />
-      <input type='text' placeholder='表面積cm²' onChange={v('area')} />
+      <input type='text' placeholder='表面積mm²' onChange={v('area')} />
       {
         // <label>
         //   <input type='checkbox' onChange={v('threePlates')} />

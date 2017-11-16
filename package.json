@@ -12,6 +12,7 @@
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
+    "lapack": "^0.1.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "shaman": "^0.3.2"
