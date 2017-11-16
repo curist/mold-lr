@@ -1,0 +1,30 @@
+
+.app {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parts {
+    margin-top: 15px;
+}
+
+.part {
+    margin-top: 15px;
+}
+
+.result {
+    margin-top: 15px;
+}
