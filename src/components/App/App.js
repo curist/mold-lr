@@ -16,7 +16,6 @@ class Part extends React.Component {
       W: 0,
       H: 0,
       CC: 0,
-      slides: 0,
       caveat: 0,
       area: 0,
       threePlates: false,
@@ -42,9 +41,8 @@ class Part extends React.Component {
       <input type='text' placeholder='W 寬' onChange={v('W')} />
       <input type='text' placeholder='H 高' onChange={v('H')} />
       <input type='text' placeholder='CC' onChange={v('CC')} />
-      <input type='number' min={0} placeholder='滑塊數' onChange={v('slides')} />
-      <input type='number' min={0} placeholder='穴數' onChange={v('caveat')} />
       <input type='text' placeholder='表面積mm²' onChange={v('area')} />
+      <input type='number' min={0} placeholder='穴數' onChange={v('caveat')} />
       {
         // <label>
         //   <input type='checkbox' onChange={v('threePlates')} />

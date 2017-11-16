@@ -6,7 +6,7 @@ const molders = {
 }
 
 export function composeFeature(molder, parts) {
-  let L = 0, W = 0, H = 0, CC = 0, caveats = 0, slides = 0, area = 0;
+  let L = 0, W = 0, H = 0, CC = 0, caveats = 0, area = 0;
 
   for(let i = 0; i < parts.length; i++) {
     const p = parts[i];
@@ -14,11 +14,10 @@ export function composeFeature(molder, parts) {
     W += (p.caveat || 1) * p.W;
     H = Math.max(H, p.H);
     CC += p.CC;
-    slides += (p.slides || 0);
     caveats += (p.caveat || 1);
     area += p.area;
   }
-  return [ L, W, H, CC, caveats, slides, area, area/CC ].concat(molders[molder]);
+  return [ L, W, H, CC, caveats, area, area/CC ].concat(molders[molder]);
 }
 
 export default function parse(rawData) {
@@ -46,7 +45,6 @@ export default function parse(rawData) {
       W: caveat * parseFloat(data[1]),
       H: parseFloat(data[2]),
       CC: parseFloat(data[3]),
-      slides: !data[4] ? 0 : parseInt(data[4]),
       caveat: caveat,
       area: parseInt(data[8] || 0),
     });
